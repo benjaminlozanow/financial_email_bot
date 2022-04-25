@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv("e_variables.env")
 
-YAHOO_API_KEY = os.getenv("YAHOO_API_KEY")
+YAHOO_API_KEY = os.environ.get("YAHOO_API_KEY")
 
 class YahooQuotes:
     url = "https://yfapi.net/v6/finance/quote"
